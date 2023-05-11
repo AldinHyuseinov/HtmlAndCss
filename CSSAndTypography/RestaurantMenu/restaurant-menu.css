@@ -1,0 +1,32 @@
+body {
+    text-align: center;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("OpenSans-Regular.ttf") format("truetype");
+}
+
+h1 {
+    font-weight: 400;
+    font-family: "Sentinel A", "Sentinel B", Georgia, "Times New Roman", Times, serif;
+    color: #747474;
+    line-height: 1.15;
+}
+
+span {
+    font-weight: 600;
+    font-size: 16px;
+    font-style: oblique;
+    font-family: "Graphik Semibold Web", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.46;
+    color: #5c5a5a;
+}
+
+p {
+    font-weight: 400;
+    font-size: 16;
+    font-family: sans-serif, "Graphik Regular Web", "Helvetica Neue", Helvetica, Arial;
+    line-height: 1.46;
+    color: #5c5a5a;
+}
