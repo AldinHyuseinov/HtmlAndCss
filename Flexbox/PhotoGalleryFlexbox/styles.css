@@ -1,0 +1,26 @@
+body {
+    max-width: 1250px;
+    margin: 5em auto 10em;
+    background-color: rgba(128, 128, 128, 0.445);
+}
+
+body, ul, li {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    justify-content: space-between;
+}
+
+li {
+    align-content: center;
+    border: 10px solid black;
+    margin: 1.5em auto;
+    background-color: #fff;
+}
+
+img {
+    display: block;
+    margin: 2em 1em;
+}

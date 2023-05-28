@@ -1,0 +1,41 @@
+html {
+    font: 14px/1.4 "Times New Roman", serif;
+}
+
+body {
+    background-color: rgb(238, 238, 238);
+    max-width: 50em;
+    margin: 0 auto;
+    padding: 0 2em;
+}
+
+header {
+    border-bottom: 2px solid black;
+}
+
+img {
+    display: block;
+    background-color: rgb(255, 255, 255); 
+}
+
+blockquote, h1, h2, h3, h4, h5, h6 {
+    font-family: Georgia, serif;
+}
+
+main {
+    width: 70%;
+}
+
+aside {
+    width: 20%;
+    margin-left: 3em;
+}
+
+aside a {
+    color: rgb(0, 153, 0);
+}
+
+div.page {
+    display: flex;
+    flex-wrap: wrap;
+}
