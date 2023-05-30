@@ -1,0 +1,25 @@
+html {
+    font: 15px/1.4 Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(238, 238, 238);
+    max-width: 50em;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+header {
+    border-bottom: 2px solid black;
+}
+
+footer {
+    color: rgb(255, 255, 255);
+    background-color: rgb(102, 102, 102);
+}
+
+footer p {
+    margin: 1em;
+}
