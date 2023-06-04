@@ -1,0 +1,57 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: rgb(238, 238, 238);
+    max-width: 50em;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+.cards-layout.masonry {
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    gap: 1em;
+}
+
+.cards-layout.masonry .card {
+    width: 30%;
+    height: fit-content;
+    border: 1px solid gray;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.cards-layout.flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.cards-layout.flex .card {
+    flex: 1 0 15em;
+    border: 1px solid gray;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+footer {
+    border-top: 1px solid black;
+}
+
+h2 {
+    margin-top: 2em;
+}
