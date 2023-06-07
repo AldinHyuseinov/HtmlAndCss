@@ -8,6 +8,11 @@ html {
     box-sizing: inherit;
 }
 
+body {
+    min-height: 100vh;
+    margin: 2em auto;
+}
+
 .container,
 section {
     display: flex;
@@ -22,10 +27,15 @@ section {
 
 span {
     border: 1px solid black;
+    flex-grow: 1;
     padding: 2rem;
     width: 10rem;
 }
 
-section.notes {
+.notes {
     flex-direction: column;
+}
+
+.week span:first-child, .week span:nth-child(7) {
+    flex-basis: 100%;
 }

@@ -1,4 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
+    min-height: 100vh;
     max-width: 1250px;
     margin: 5em auto 10em;
     background-color: rgba(128, 128, 128, 0.445);
@@ -7,20 +14,22 @@ body {
 body, ul, li {
     display: flex;
     flex-wrap: wrap;
-}
-
-ul {
-    justify-content: space-between;
+    justify-content: center; 
+    gap: 1.5em;
 }
 
 li {
-    align-content: center;
+    flex: 0 1 20em;
     border: 10px solid black;
-    margin: 1.5em auto;
     background-color: #fff;
+    padding-inline: 1em;
 }
 
 img {
     display: block;
+    flex: 0 1 auto;
+    width: 100%;
+    height: auto;
     margin: 2em 1em;
+    object-fit: contain;
 }
