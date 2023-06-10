@@ -3,6 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Layout - Flexbox</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -10,6 +12,15 @@
 <body>
     <header>
         <h1>Site Title</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </nav>
     </header>
 
     <div class="page">
@@ -17,6 +28,10 @@
         <main>
             <article>
                 <h2>Heading level 1</h2>
+
+                <div class="media one">
+                    <img src="Image1.jpg" alt="Image">
+                </div>
 
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tempus lorem nibh, quis
@@ -39,7 +54,7 @@
                     libero et sodales. Donec posuere pharetra efficitur.
                 </p>
 
-                <img src="Image1.jpg" alt="Image">
+
 
                 <section>
                     <h3>Heading level 2</h3>
@@ -102,7 +117,9 @@
                 <section>
                     <h3>Heading level 2</h3>
 
-                    <img src="Image2.jpg" alt="Image">
+                    <div class="media two">
+                        <img src="Image2.jpg" alt="Image">
+                    </div>
 
                     <p>
                         Ut vitae tristique magna. In hac habitasse platea dictumst. Aliquam tempor dolor in ante porta,
@@ -119,23 +136,24 @@
                         amet pharetra.
                     </p>
                 </section>
+                
             </article>
         </main>
 
         <aside>
             <section>
-                <h4>Categories</h4>
+                <h3>Categories</h4>
 
-                <ul>
-                    <li><a href="#">Stuff</a></li>
-                    <li><a href="#">Something</a></li>
-                    <li><a href="#">Important</a></li>
-                    <li><a href="#">Dogs</a></li>
-                </ul>
+                    <ul>
+                        <li><a href="#">Stuff</a></li>
+                        <li><a href="#">Something</a></li>
+                        <li><a href="#">Important</a></li>
+                        <li><a href="#">Dogs</a></li>
+                    </ul>
             </section>
 
             <section>
-                <h4>Social</h4>
+                <h3>Social</h3>
 
                 <ul>
                     <li><a href="#">Facebook</a></li>
