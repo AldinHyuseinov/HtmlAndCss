@@ -1,13 +1,8 @@
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 3em;
     min-height: 100vh;
-    margin: 1em auto;
 }
 
-body>header {
+.container>header {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -20,11 +15,10 @@ body>header {
     width: 100%;
     display: flex;
     justify-content: center;
-
 }
 
-.wrapper,
-body>header,
+.container,
+.container>header,
 footer {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1056%26quot%3b)' fill='none'%3e%3cpath d='M648.9112758285247 198.3476115204532L525.3349512666379 305.7708715701751 632.7582113163597 429.3471961320619 756.3345358782466 321.92393608234005z' fill='rgba(109%2c 108%2c 108%2c 0.03)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M320.30267348312634 326.85441903694334L223.4198448482898 337.0372146509834 233.60264046232987 433.92004328581993 330.4854690971664 423.73724767177987z' fill='rgba(109%2c 108%2c 108%2c 0.03)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M255.1239930501582 295.13487958526343L209.45667624980774 162.507361379418 76.82915804396234 208.17467817976842 122.49647484431276 340.80219638561385z' fill='rgba(109%2c 108%2c 108%2c 0.03)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1407.6937335319142 198.4394122497814L1451.1004522099322 79.18043282930759 1331.8414727894583 35.77371415128954 1288.4347541114403 155.03269357176336z' fill='rgba(109%2c 108%2c 108%2c 0.03)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1088.0874496485403 450.4056061957128L1070.3749679476987 550.8580816460073 1170.8274433979932 568.570563346849 1188.5399250988348 468.1180878965544z' fill='rgba(109%2c 108%2c 108%2c 0.03)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M745.0071391028198 30.607863368703256L689.5432917447722 175.09612560699927 834.0315539830682 230.55997296504688 889.4954013411158 86.07171072675087z' fill='rgba(109%2c 108%2c 108%2c 0.03)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M275.74376514376 141.7556110438139L128.69441056563903 93.97637942304593 80.91517894487106 241.0257340011669 227.96453352299204 288.8049656219349z' fill='rgba(109%2c 108%2c 108%2c 0.03)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1130.9128158300894 223.391958563655L1230.95588223246 265.8577207878465 1273.4216444566514 165.8146543854759 1173.378578054281 123.3488921612844z' fill='rgba(109%2c 108%2c 108%2c 0.03)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1326.8460502774287 24.457519557736077L1253.287042656726-35.109390311178736 1193.7201327878113 38.449617309523894 1267.279140408514 98.01652717843871z' fill='rgba(109%2c 108%2c 108%2c 0.03)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M660.5766554805058 153.32390770527547L623.4032806179391 236.81667465672686 706.8960475693905 273.99004951929356 744.0694224319572 190.49728256784215z' fill='rgba(109%2c 108%2c 108%2c 0.03)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1079.0392952066934 448.61109146906716L1084.6647453092803 287.519277500983 923.5729313411962 281.89382739839596 917.9474812386092 442.9856413664802z' fill='rgba(109%2c 108%2c 108%2c 0.03)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1354.7915704180366 364.9192021361939L1221.7537562883076 415.9876342803234 1272.822188432437 549.0254484100524 1405.860002562166 497.957016265923z' fill='rgba(109%2c 108%2c 108%2c 0.03)' class='triangle-float3'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1056'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
 }
@@ -46,6 +40,10 @@ nav ul {
     gap: 1em;
 }
 
+nav a:hover {
+    text-decoration: underline;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -54,7 +52,7 @@ a {
 .need-website {
     display: flex;
     align-items: center;
-    gap: 5em;
+    gap: 2em;
     width: 60%;
 }
 
@@ -166,11 +164,23 @@ footer {
     align-items: center;
     gap: 2em;
     width: 100%;
+    box-shadow: inset 0 0 1em 0 rgba(0, 0, 0, 0.25);
 }
 
 footer header {
     flex-basis: 30%;
+    flex-grow: 1;
     padding: 4em;
+}
+
+footer section {
+    padding: 4em;
+    flex-grow: 1;
+}
+
+footer svg {
+    width: 1em;
+    margin-right: 0.5em;
 }
 
 .sitemap ul {
@@ -206,40 +216,4 @@ footer header {
 
 .sitemap li:nth-child(7) {
     grid-area: TermsAndConditions;
-}
-
-@media (max-width: 500px) {
-    html {
-        font-size: 12px;
-    }
-}
-
-@media (min-width: 500px) and (max-width: 600px) {
-    html {
-        font-size: 14px;
-    }
-}
-
-@media (min-width: 600px) and (max-width: 800px) {
-    html {
-        font-size: 16px;
-    }
-}
-
-@media (min-width: 800px) and (max-width: 1300px) {
-    html {
-        font-size: 18px;
-    }
-}
-
-@media (min-width: 1300px) and (max-width: 1800px) {
-    html {
-        font-size: 21px;
-    }
-}
-
-@media (min-width: 1800px) {
-    html {
-        font-size: 23px;
-    }
 }

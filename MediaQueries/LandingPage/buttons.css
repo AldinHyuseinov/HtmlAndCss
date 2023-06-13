@@ -1,6 +1,7 @@
 button {
    display: block; 
    background-color: #fff;
+   cursor: pointer;
 }
 
 .need-website button {
@@ -8,6 +9,11 @@ button {
     height: 3em;
     border: 2px solid black;
     border-radius: 0.5em;
+}
+
+.need-website button:hover {
+    background-color: black;
+    color: #fff;
 }
 
 form button {
