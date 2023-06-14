@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif');
+
+html {
+    font: 16px/1.5 'PT Sans', sans-serif;
+}
+
+body,
+button {
+    font: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font: 1em/1.2 'PT Sans', sans-serif;
+    margin: 1em 0 0.5em 0;
+}
+
+h1 {
+    color: #fff;
+    letter-spacing: 0.4em;
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+h4 {
+    font-size: 1.6rem;
+}
+
+h5 {
+    font-size: 1.4rem;
+}
+
+h6 {
+    font-size: 1.2rem;
+}
+
+p {
+    padding-bottom: 1.5rem;
+}
+
+ul {
+    margin: 0 0 1.5rem 1.5rem;
+}
+
+.red-text {
+    color: #D01919;
+}
+
+.coach-name {
+    padding: 0;
+}
+
+.coach-name,
+.red-text {
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+.coach-description {
+    color: gray;
+}
+
+.header-item p {
+    padding: 0;
+}
+
+.hero-items p {
+    color: #fff;
+    padding-inline: 45em;
+    text-align: center;
+}
+
+footer p {
+    padding: 0;
+}

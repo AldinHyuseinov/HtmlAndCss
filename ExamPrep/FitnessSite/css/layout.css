@@ -1,0 +1,128 @@
+body {
+    min-height: 100vh;
+}
+
+body>header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #D01919;
+    color: #fff;
+    padding: 1em;
+    padding-inline: 3em;
+}
+
+svg {
+    fill: #fff;
+    width: 2em;
+    height: 1.5em;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.header-item {
+    display: flex;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 5em;
+    padding: 2em 6em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero-section {
+    height: 38em;
+    background: url(../images/fitness-main.jpg) center;
+    background-size: cover;
+}
+
+.hero-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-items button {
+    border: none;
+    width: 8em;
+    height: 2em;
+    border-radius: 0.5em;
+    color: #fff;
+    background-color: #D01919;
+}
+
+.welcome-section, .coaches-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.welcome-section {
+    margin-bottom: 3em;
+}
+
+.coaches-section {
+    background-color: rgba(211, 211, 211, 0.3);
+}
+
+.welcome-section header, .coaches-section header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header hr {
+    border: 1px solid #D01919;
+    width: 2em;
+}
+
+.welcome-items, .coaches {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.welcome-item, .coach {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-right: 1em;
+    width: 35em;
+}
+
+.coach {
+    margin-bottom: 3em;
+}
+
+.welcome-item p, .coach p {
+    padding-inline: 8em;
+}
+
+.media.img-icon {
+    width: 5em;
+}
+
+.media {
+    width: 20em;
+}
+
+footer {
+    padding: 0.5em;
+    text-align: center;
+    background-color: #D01919;
+}
