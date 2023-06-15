@@ -1,0 +1,171 @@
+.site {
+    min-height: 100vh;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.wrapper {
+    box-shadow: inset 0em 110em 11px 0px rgba(0, 0, 0, 0.3);
+    background: url(../image/computer-main.jpg);
+    background-size: 100% auto;
+    background-position: center -20em;
+    background-repeat: no-repeat;
+    height: 40em;
+}
+
+.section-banner {
+    margin-top: 2em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-banner h2 {
+    font-size: 4.5em;
+    color: #fff;
+}
+
+.section-banner p {
+    display: inline-block;
+    font-size: 1.5em;
+    width: 22em;
+    color: #fff;
+}
+
+.buy,
+.see {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.2em 0.5em;
+    border-radius: 0.2em;
+    font-weight: bold;
+}
+
+.buy {
+    background-color: rgba(0, 208, 142, 1);
+    border: 2px solid transparent;
+    font-size: 1.5em;
+    margin-bottom: 4em;
+}
+
+.buy:hover {
+    border-color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.see {
+    font-size: 1.2em;
+}
+
+.items {
+    display: flex;
+    align-items: center;
+}
+
+.items svg {
+    width: 2em;
+    height: 1.5em;
+}
+
+.section-hustle-what, .hustle-case-uses {
+    display: flex;
+}
+
+.content {
+    padding-inline: 5em;
+}
+
+::marker {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='1.3em' fill='%2300D08E' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --%3E%3Cpath d='M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z'/%3E%3C/svg%3E") '    ';
+}
+
+.section-hustle-what p {
+    font-size: 1.8em;
+    width: 25em;
+}
+
+.section-hustle-what ul li {
+    font-size: 1.3em;
+    margin-bottom: 1em;
+    margin-left: 2em;
+}
+
+.hustle-case-uses h3 {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.use-case-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.use-case {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    flex: 1 0 30%;
+}
+
+.use-case p {
+    font-size: 1.6em;
+    color: #00D08E;
+    font-weight: bold;
+}
+
+.section-questions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    background-color: rgba(178, 241, 221, 1);
+}
+
+.question {
+    display: flex;
+    flex: 0 0 30%;
+    padding: 1em;
+}
+
+.questions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+
+.question-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2em;
+}
+
+.question-content h4 {
+    font-size: 1.8em;
+}
+
+.question-content p, .section-questions p:last-child {
+    font-size: 1.3em;
+}
+
+.media {
+    width: 50%;
+}
+
+.content {
+    width: 50%;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
