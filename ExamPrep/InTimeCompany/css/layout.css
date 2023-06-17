@@ -1,0 +1,237 @@
+body {
+    min-height: 100vh;
+}
+
+.site {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+header p {
+    font-size: 1.8em;
+    padding: 0;
+}
+
+header p span {
+    color: rgba(0, 140, 186, 1);
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1em;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+.section-banner {
+    background: url(../images/slide2.jpg) no-repeat center center;
+    background-size: 100% 100%;
+    min-height: 30em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner-content {
+    width: 40%;
+    padding-left: 2em;
+    padding-block: 1em;
+    margin-left: 13%;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.banner-content a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgba(0, 140, 186, 1);
+    border-radius: 1em;
+    font-size: 1.5em;
+    padding-inline: 2em;
+}
+
+.section-welcome {
+    text-align: center;
+    padding: 2em;
+}
+
+.section-welcome h3,
+.section-our-services h3,
+.section-newsletter h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 500;
+}
+
+.section-welcome h3::after,
+.section-our-services h3::after,
+.section-newsletter h3::after {
+    display: block;
+    content: '';
+    background-color: rgba(0, 140, 186, 1);
+    width: 3.8em;
+    height: 2px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.section-our-services h3::after {
+    background-color: rgba(72, 72, 72, 1);
+}
+
+.section-newsletter h3::after {
+    background-color: #fff;
+}
+
+.section-welcome p {
+    padding-inline: 23.5em;
+}
+
+.section-welcome a,
+.card-content a {
+    text-decoration: none;
+    background-color: rgba(69, 69, 69, 1);
+    font-size: 1.2em;
+    padding: 0.5em 1em;
+    border-radius: 1em;
+    color: #fff;
+}
+
+.card-content a {
+    border-radius: 0;
+    font-size: 1em;
+}
+
+.section-our-services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(238, 240, 241, 1);
+    padding: 2em;
+}
+
+.card-list {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.card {
+    flex: 0 1 20%;
+    background-color: #fff;
+    border-radius: 0.5em;
+    overflow: hidden;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.8em;
+}
+
+.card-content h4 {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.section-newsletter {
+    background-color: rgba(57, 63, 67, 1);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.8em;
+}
+
+form label {
+    display: none;
+}
+
+form input#email {
+    height: 2em;
+    width: 30em;
+    border: none;
+    background-color: rgba(84, 90, 94, 1);
+    border-radius: 0.5em;
+}
+
+input[type="submit"] {
+    border: none;
+    border-radius: 0.5em;
+    padding: 0.5em 2em;
+    background-color: rgba(0, 140, 186, 1);
+    color: #fff;
+}
+
+footer {
+    background-color: rgba(47, 53, 57, 1);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1.8em 1.8em 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 1.8em;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer li {
+    margin-bottom: 0.5em;
+}
+
+footer li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.address p:nth-child(3) {
+    padding: 0;
+}
+
+.copyright {
+    background-color: rgba(38, 43, 47, 1);
+    width: 103.5%;
+    padding: 1em;
+    text-align: center;
+    align-self: center;
+}
+
+.copyright span {
+    color: rgba(0, 140, 186, 1);
+}
+
+.icons {
+    display: flex;
+    gap: 1em;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
