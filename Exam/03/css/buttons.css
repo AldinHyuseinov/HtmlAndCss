@@ -1,0 +1,34 @@
+.download-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.download-buttons a {
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    border-radius: 0.5em;
+    padding: 1em;
+}
+
+.plan a {
+    align-self: center;
+    background-color: rgba(173, 226, 223, 1);
+    border-radius: 0.5em;
+    padding: 1.5em 1em;
+    text-align: center;
+    height: 5em;
+    width: 10em;
+    margin-top: 2em;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.plan.expand a {
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    margin-top: auto;
+}
